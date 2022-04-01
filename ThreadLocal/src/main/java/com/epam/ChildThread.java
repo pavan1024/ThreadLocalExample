@@ -8,7 +8,7 @@ public class ChildThread extends Thread {
 	public void run() {
 		log.info("Before Assigning Thread Local Value : "+ParentThread.tl.get());
 		ParentThread.tl.set("CLV");
-		log.info("Parent Thread Local Value is : "+ParentThread.tl.get());
+		log.info("Child Thread Local Value is : "+ParentThread.tl.get());
 	}
 	
 }
